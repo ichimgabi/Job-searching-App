@@ -1,34 +1,35 @@
 Mod de implementare:
 
 1.Application 
-	– Se bazeaza pe 2 liste, una de Companii, alta de Utilizatori, asupra carora fac operatii de baza(adaugare, stergere etc.)
+	- Se bazeaza pe 2 liste, una de Companii, alta de Utilizatori, asupra carora fac operatii de baza(adaugare, stergere etc.)
 	- Metoda getJobs foloseste 3 loop-uri de tip for pentru a trece prin joburile fiecarui department ale fiecarei comapnii, pentru a le adauga unei liste de joburi, careia ii voi da return.
 2.Company 
-	– Descrisa printr-o lista de Departamente, si una de Recruiteri, pe langa nume si manager(se fac aceleasi operatii de baza).
+	- Descrisa printr-o lista de Departamente, si una de Recruiteri, pe langa nume si manager(se fac aceleasi operatii de baza).
 	- Metodele “move” muta fie angajatul, fie un intreg department, iar mai apoi il sterge din lista initiala.
 	- Metoda “getRecruiter” foloseste clasa “Random” pentru a alege la intamplare ce recruiter i se atribuie Utilizatorului.
-3.Consumer – Are o lista de cunoscuti si un resume
-	-clasa interna “Resume” retine informatiile utilizatorului, educatia si experienta, iar metoda “aniExp” calculeaza folosind clasa Calendar, numarul de ani de experienta.
+3.Consumer 
+	- Are o lista de cunoscuti si un resume
+	- Clasa interna “Resume” retine informatiile utilizatorului, educatia si experienta, iar metoda “aniExp” calculeaza folosind clasa Calendar, numarul de ani de experienta.
 4.Department 
-	– caracterizata de angajati si joburi + operatii de baza
+	– Caracterizata de angajati si joburi + operatii de baza
 5.Education 
-	– se foloseste de Calendar pentru a retine data de inceput si sfarsit a studiilor si face operatii de baza
+	– Se foloseste de Calendar pentru a retine data de inceput si sfarsit a studiilor si face operatii de baza
 6.Employee 
-	– retine numele companiei si salariul + operatii de baza
+	– Retine numele companiei si salariul + operatii de baza
 7.Experience 
-	- se foloseste de Calendar si face operatii de baza
+	- Se foloseste de Calendar si face operatii de baza
 8.Information 
-	– Tine minte informatiile Utilizatorilor si face operati de baza
+	- Tine minte informatiile Utilizatorilor si face operati de baza
 9.Job 
-	– Retine detalii despre locul de munca + operatii de baza
-    - Constangerile sunt verificate in “meetsRequirements” prin operatii logice si folosirea clasei Calendar.
-10. Manager 
-	– Are o lista de angajari prin care trece pentru a determina Utilizatorii cu cel mai mare scor.
-	-Dupa alegere, Utilizatorii sunt eliminati din lista, iar daca lista e goala sau jobul nu mai are locuri disponibile, se va iesi din loop.
+	- Retine detalii despre locul de munca + operatii de baza
+    	- Constangerile sunt verificate in “meetsRequirements” prin operatii logice si folosirea clasei Calendar.
+10.Manager 
+	- Are o lista de angajari prin care trece pentru a determina Utilizatorii cu cel mai mare scor.
+	- Dupa alegere, Utilizatorii sunt eliminati din lista, iar daca lista e goala sau jobul nu mai are locuri disponibile, se va iesi din loop.
 11.Recruiter 
-	– Calzuleaza userRating-ul si creeeaza un Request pentru Manager
+	- Calzuleaza userRating-ul si creeeaza un Request pentru Manager
 12.User 
-	– Metoda getTotalScore calculeaza scorul total al userului
+	- Metoda getTotalScore calculeaza scorul total al userului
 	- Convert creaza un nou Employee.
 13.Finance, IT, Management si Marketing 
-	– implementeaza metoda abstracta “getTotalSalaryBudget” in functie de categoria departamentului.
+	- implementeaza metoda abstracta “getTotalSalaryBudget” in functie de categoria departamentului.
